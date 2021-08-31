@@ -1,0 +1,26 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- insertion du script javascript script.js en mode defer ou async -->
+    <script src="./script.js" defer></script>
+    <!-- import du fichier de style css  style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Exo 1 JS getElementById</title>
+</head>
+<body>
+    <h2>Calculer le prix TTC</h2>
+    <form>
+        <p>Saisir le prix HT de l'article :</p>
+        <p><input type="text" id="prixht"></p>
+        <p>Saisir le nombre d'articles :</p>
+        <p><input type="text" id="qtx"></p>
+        <p>Saisir le taux de TVA (20%) :</p>
+        <p><input type="text" id="tva"></p>
+        <p><input type="button" value="calculer" onclick="prixttc()"></p>
+    </form>
+    <p id="resultat"></p>
+    <p id="error"></p>
+</body>
+</html>

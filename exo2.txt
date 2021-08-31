@@ -1,0 +1,20 @@
+Exercice 2 :
+Céer une fonction qui va calculer et afficher le prix de photocopie en fonction du nombre de photocopies. 
+Les 10 premières photocopies coutent 1.20 € chacune, les 10 suivantes (de 11 à 20) countent 1.10 € chacune,
+les suivantes coutent 1.00 € chacune.
+
+Partie HTML
+Créer une page html (index.html) qui va contenir :
+-Un titre H2 avec la valeur calculer le prix des photocopies :
+-Un formulaire avec un champs input (de type text) et un bouton :
+le champ input (type="text" id="nbr") va récupérer le nombre de photocopies,
+Chaque champs imput (type="text") sera précédé d'un paragraphe (balise p html) :
+un champ input button qui à pour valeur d'attribut (value="calculer" onclick="total()"),
+Chaque champ de formulaire sera précédé de la balise html p (pour sauter une ligne),
+-créer un paragraphe qui à pour id="resultat",
+-créer un paragraphe qui à pour id="error",
+-Lier un fichier script.js à la page html (dans la partie head) il va contenir la fonction total(),
+
+Partie JS
+-Créer un fichier script.js
+-Créer la fonction total() dans le fichier script.js,

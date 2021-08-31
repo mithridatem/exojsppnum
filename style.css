@@ -1,0 +1,8 @@
+span{
+    font-weight: bold;
+}
+#error{
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+}

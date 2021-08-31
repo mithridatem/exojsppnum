@@ -1,0 +1,40 @@
+Exercice 1 :
+Céer une fonction qui va calculer et afficher le prix TTC depuis le prix ht d'un article, sa quantitée et son taux de tva.
+
+Partie HTML
+Créer une page html (index.html) qui va contenir :
+-Un titre H2 avec la valeur calculer le prix TTC :
+-Un formulaire avec 3 champs input (de type text) et un bouton :
+le 1er champ va récupérer le prix ht d'un article (id="prixht"),
+le 2éme champ va récupérer la quantitée d'article (id="qtx"),
+le 3éme champ va récupérer le taux de tva (id="tva"),
+Chaque champs imput (type="text") sera précédé d'un paragraphe (balise p html) :
+-> saisir le prix HT, saisir la quantitée, saisir le taux de TVA,
+un champ input button qui à pour valeur d'attribut (value="calculer" onclick="prixttc()"),
+Chaque champ de formulaire sera précédé de la balise html p (pour sauter une ligne),
+-créer un paragraphe qui à pour id="resultat",
+-créer un paragraphe qui à pour id="error",
+-Lier un fichier script.js à la page html (dans la partie head) il va contenir la fonction prixttc().
+
+Partie JS
+-Créer un fichier script.js
+-Créer la fonction prixttc() dans le fichier script.js,
+-La fonction prixttc() doit calculer le prixttc d'un article (prixht* qtx * (tva/100)),
+-Dans la fonction prixttc() récupérer la valeur des champs de formulaire (prixht, qtx et tva  par leur id ) 
+avec document.getElementById("id de l'élément").value dans des variables,
+-Transformer en nombre (prixht, qtx et tva) -> utiliser la méthode  variable = parseInt(variable) -> (parsing ou cast en parseInt),
+-Créer une variable totalTtc (qui va récupérer le résultat du calcul (prixht* qtx * (tva/100))
+-Récupérer dans des variables les paragraphes suivant avec document.getElementById("id de l'élément") :
+error (qui va contenir les messages d'erreurs),
+resultat (qui va afficher le resultat du calcul ttc sous la forme "le prix total TTC est égal à : " + totalTtc + " €")
+-Afficher dans resultat (le resultat du calcul du prix totalttc comme ci-dessus) avec la méthode innerHTML,
+
+Partie Bonus JS
+
+-Ajouter (intégrer) un test (condition) (si les 3 champs prixht, qtx et tva ne sont pas vides (valeur != "")) 
+dans la fonction prixttx(),
+Si ok (if) :
+-Exécuter le calcul (prixht* qtx * (tva/100) et l'afficher dans resultat(id="resultat") avec la méthode innerHTML :
+-> "le prix total TTC est égal à : " + totalTtc + " €",
+Sinon (else) :
+-Afficher dans error (id="error")-> "Veuillez remplir les champs de formulaire avec la méthode innerHTML".
